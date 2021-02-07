@@ -1,0 +1,102 @@
+.contact {
+	
+	background-color: #2d3563;
+
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 850px) {
+			flex-direction: column;
+		}
+	}
+
+	&__form {
+		text-align: left;
+
+		flex: 1 1 auto;
+	}
+
+	&__clients {
+		margin: 0px 0px 0px 100px;
+
+		text-align: left;
+
+		flex: 0 0 380px;
+
+		@media (max-width: 850px) {
+			margin: 50px 0px 0px 0px;
+
+			flex: 0 0 auto;
+		}
+	}
+
+	&__title {
+		color: #fff;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__table {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	&__item {
+		width: 100px;
+
+		margin: 0px 0px 20px 0px;
+
+		img {max-width: 100%;}
+	}
+}
+.form-contact {
+	&__title {
+		margin: 0px 0px 30px 0px;
+		color: #fff;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	input {
+		height: 45px;
+	}
+
+	input,
+	textarea {
+		flex: 1 1 auto;
+
+		width: 100%;
+		margin: 0px 0px 20px 0px;
+		padding: 20px;
+		border: 2px solid rgba($color: #000, $alpha: 0.5);
+		border-radius: 20px;
+
+		color: #000;
+		font-family: 'Raleway Light', sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.7px;
+		text-transform: uppercase;
+
+		outline: 0;
+		transition: ease-in-out 0.3s;
+		
+		background-color: #FDF4D4;
+
+		&:focus {
+			border: 2px solid #00e095;
+
+			transition: ease-in-out 0.3s;
+		}
+	}
+
+	textarea {
+		resize: none;
+	}
+}

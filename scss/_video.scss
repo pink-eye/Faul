@@ -1,0 +1,50 @@
+.video {
+	overflow: hidden;
+
+
+	background-color: #3b4475;
+
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		padding: 100px 0;
+	}
+
+	&__icon {
+		cursor: pointer;
+
+		width: 200px;
+
+		img {max-width: 100%;}
+	}
+
+	&__subtitle {
+		margin: 30px 0 0 0;
+
+		color: #ffffff;
+		font-family: 'Open Sans Bold', arial;
+		font-size: 16px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.8px;
+	}
+
+	&__wave {
+
+		width: 100%;
+
+		&_top {
+			transform: rotate(180deg);
+
+			margin: -5px 0px 0 0px;
+		}
+
+		&_bottom {
+			margin: 0px 0px -5px 0px;
+		}
+	}
+}

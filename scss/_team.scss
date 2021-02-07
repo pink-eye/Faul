@@ -1,0 +1,118 @@
+.team {
+	position: relative;
+	overflow: hidden;
+
+	width: 100%;
+
+	background-color: #1c234a;
+
+	&__head {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		color: #ffffff;
+	}
+
+	&__table {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		margin: 70px -5px;
+
+		@media (max-width: 768px) {
+			margin: 60px 0;
+		}
+
+		@media (max-width: 491px) {
+			margin: 50px 0 30px 0;
+		}
+	}
+
+	&__card {
+		flex: 0 0 220px;
+		position: relative;
+		overflow: hidden;
+	
+		margin: 0 5px 15px 5px;
+		border: 1px solid #fff;
+		border-radius: 5px;
+
+		text-align: center;
+		cursor: pointer;
+
+		@media (min-width: 992px) {
+			.team__data {bottom: -25px}
+			&:hover {
+				.team__data {bottom: 0;}
+			}	
+		}
+	}
+
+	&__image {
+		height: 310px;
+	}
+
+	&__image img{
+		position: absolute;	
+		top: 0;
+		left: 0;
+
+		height: 100%;
+		width: 100%;
+		
+		object-fit: cover;
+	}
+
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__text {
+		margin: 0 0 25px 0;
+
+		color: #f3f3f3;
+		font-family: "FreeSet";
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0.7px;
+
+		background-color: #5783D3;
+	}
+
+	&__data {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+
+		background-color: #fff;
+	}
+
+	&__name, &__job {
+		color: #222121;
+	}
+
+	&__wave {
+		width: 100%;
+
+		&_top {
+			svg{transform: rotate(180deg);}
+				margin: -5px 0px 0px 0px;
+		}
+
+		&_bottom {
+			margin: 0px 0px -5px 0px;
+		}
+	}
+}

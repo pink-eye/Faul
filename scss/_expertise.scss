@@ -1,0 +1,79 @@
+.expertise {
+	position: relative;
+	background-color: #2d3563;
+
+	&__head {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		color: #fff;
+	}
+
+	&__table {
+		display: grid;
+		grid-template-rows: repeat(auto-fit, minmax(320px, auto));
+		grid-template-columns: repeat(auto-fit, 290px);
+		gap: 20px;
+		justify-content: center;
+
+		margin: 100px 0 0 0;
+
+		padding: 0px 0px 28px 0px;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+
+		padding: 15px;
+		border: 1px solid rgba($color: #fff, $alpha: 0.05);
+		border-radius: 8px;
+
+		background-color: #FDF4D4;
+		box-shadow: 0 10px 40px -10px rgba( 0, 0, 0, 0.1);
+
+		cursor: pointer;
+
+		@media (min-width: 992px) {
+
+			&:hover {
+				transform: translateY(-5px);	
+				box-shadow: 0 10px 40px -10px rgba( 0, 0, 0, 0.9);
+			}
+		}
+	}
+
+	&__icon {
+
+		margin: 10px 0px 0px 0px;
+
+		img {
+			max-width: 100%;
+			width: 100px;
+		}
+	}
+
+	&__subtitle {
+		margin: 30px 0px 0px 0px;
+
+		color: #222121;
+		font-family: 'Exo 2.0 Bold', sans-serif;
+		font-size: 16px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.7px;
+
+	}
+
+	&__text {
+		flex: 1 1 auto;
+
+		margin: 10px 0px 0px 0px;
+		font-size: 14px;
+
+		color: #2c2b2b;
+	}
+}

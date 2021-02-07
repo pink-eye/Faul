@@ -1,0 +1,130 @@
+@import "_popup";
+@import "_footer";
+@import "_contact";
+@import "_testimonials";
+@import "_works";
+@import "_team";
+@import "_expertise";
+@import "_video";
+@import "_story";
+@import "_header";
+
+* {
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.wrapper {
+
+	max-width: 950px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	text-align: center;
+}
+
+
+.title {
+	font-family: 'a_FuturaRound Bold', 'Helvetica', arial;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1.1px;
+}
+
+.text {
+	font-family: 'Montserrat Light', sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	letter-spacing: 1.1px;
+	word-spacing: 3px;
+}
+
+.button {
+	position: relative;
+	display: block;
+	border-radius: 2.5px;
+	z-index: 100;
+	span {
+		display: block;
+		z-index: 100;
+
+		padding: 8px;
+		border-radius: 2.5px;
+
+		background-color: rgba($color: #000000, $alpha: 0);
+
+		color: #fff;
+		font-family: 'Raleway Bold', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		cursor: pointer;
+
+		transition: all .3s ease-in-out 0s;
+
+		background-color: #00e095;
+
+		@media (min-width: 992px) {
+			&:hover {
+				transform: translateY(3px);
+				transition: all .3s ease-in-out 0s;
+			}
+		}
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 8px;
+		left: 0;
+		z-index: -1;
+
+		width: 100%;
+		height: 100%;
+		border-radius: 0 0 2.5px 2.5px;
+
+		background-color: #22af79;
+
+		transition: all .3s ease-in-out 0s;
+	}
+}
+
+@media (min-width: 992px) {
+	.button.pressed {
+		span {
+			transform: translateY(5px);
+			transition: all .3s ease-in-out 0s;
+		}
+	}	
+}
+
+.name {
+	font-family: 'Exo 2.0 Bold', sans-serif;
+	font-size: 15px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+}
+
+.job {
+	margin: 10px 0px 0px 0px;
+
+	opacity: 0.7;
+	font-family: 'Montserrat Light', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.page-wrapper {
+	min-height: 100vh;
+	transition: 0s;
+
+	background-color: #2D3563;
+}
+
+body {
+	transition: 0s;
+}
